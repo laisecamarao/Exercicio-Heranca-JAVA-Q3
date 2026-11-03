@@ -22,5 +22,18 @@ public class App {
         System.out.println("media da turma: " + t.calcularMedia());
 
         System.out.println("pagamento: " + p.calcularPagamento(20));
+        
+        // testando turma vazia
+        Turma t2 = new Turma("BenjaminS", p, null);
+        System.out.println("media da turma vazia: " + t2.calcularMedia());
+
+        // métodos herdados
+        System.out.println("\n=+= DADOS DO PROFESSOR =+=");
+        System.out.println("mome: " + p.getNome());
+        System.out.println("idade: " + p.getIdade());
+
+        System.out.println("\n=+= DADOS DO ALUNO =+=");
+        System.out.println("nome: " + a1.getNome());
+        System.out.println("idade: " + a1.getIdade());
     }
 }
